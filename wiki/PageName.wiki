@@ -1,0 +1,35 @@
+This page is a draft, patcher not released yet!
+
+=Datapatcher start document=
+
+For databending we wanted to have a central patcher to allow visitors to patch different in and output streams themself. This way the whole event would be interactive and a lot more surprising for the builders.
+
+Startingpoint was the excellent Illucia router by Paperkettle. The problem with with the router was the fact that all the in and output where hardcoded. We needed a more dynamic flow where installations would register themselfs and create connections.
+
+We also dumbed the concept down a litte bit to keep clear for non technical visitors. Every installation is allow input from one other installation.
+
+So if you have a pachtable pong game and have inputs to control the Y positions of both the paddles. You could only patch them from a single source. So Pong will gets all his signals from the patchable space invaders.
+
+ILLUSTRATION
+
+Possible:
+space invader -> Pong
+	      -> Frogger 
+
+Not possible
+
+space invader -> Pong
+Frogger       ->
+
+==Adress naming==
+For this to work we have put up some adressnaming rules so the patcher understands what's coming in. The syntax is as follows
+
+{{{nameOfInstallation/(in/out)/nalueName }}}
+
+Itś broken down in:
+nameOfInstallation: The name of your art installation, software, hardware
+(in/out): If it's an input or an output. /in/ are the adresses you're listening to, /out/ are the adresses you're sending from.
+ValueName: could be everything, but's it nice if it would be a little descriptive.
+
+==PatchAction==
+Next to the in/out adresses there also a special command type called patchAction.
