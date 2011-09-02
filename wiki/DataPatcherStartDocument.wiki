@@ -13,12 +13,12 @@ So if you have a pachtable pong game and have inputs to control the Y positions 
 
 Possible:
 space invader -> Pong
-	      -> Frogger 
+space invader -> Frogger 
 
 Not possible
 
 space invader -> Pong
-Frogger       ->
+Frogger       -> Pong
 
 ==Adress naming==
 For this to work we have put up some adressnaming rules so the patcher understands what's coming in. The syntax is as follows
