@@ -11,13 +11,15 @@ We also dumbed the concept down a litte bit to keep it understandable for non te
 So if you have a pachtable pong game and have inputs to control the Y positions of both the paddles. You could only patch them from a single source. E.g. Pong will gets all his signals from the patchable space invaders. Soace invaders could provide signal for multiple installations tough.
 
 
-Possible:
+*Possible*
 space invader -> Pong
+
 space invader -> Frogger 
 
-Not possible
+*Not possible*
 
 space invader -> Pong
+
 Frogger       -> Pong
 
 ==Adress naming==
