@@ -1,0 +1,44 @@
+This page is a draft, will be better along the weekend/ next week
+
+=Datapatcher start document=
+
+For databending we wanted to have a central patcher to allow visitors to patch different in and output streams themself. This way the whole event would be interactive and a lot more surprising for the builders.
+
+Startingpoint was the excellent Illucia router by Paperkettle. The problem with with the router was the fact that all the in and outputs where hardcoded. We needed a more dynamic flow where installations, software and/or hardware,  would register themselfs and create connections.
+
+We also dumbed the concept down a litte bit to keep it understandable for non technical visitors. Every installation is allowed input from one installation.
+
+So if you have a pachtable pong game and have inputs to control the Y positions of both the paddles. You could only patch them from a single source. E.g. Pong will gets all his signals from the patchable space invaders. Soace invaders could provide signal for multiple installations tough.
+
+
+Possible:
+space invader -> Pong
+	      -> Frogger 
+
+Not possible
+
+space invader -> Pong
+Frogger       ->
+
+==Adress naming==
+For this to work we have put up some adressnaming rules so the patcher understands what's coming in. The syntax is as follows
+
+{{{nameOfInstallation/(in/out)/nalueName }}}
+
+It's broken down in:
+*nameOfInstallation:* The name of your art installation, software, hardware
+*(in/out):* If it's an input or an output. /in/ are the adresses you're listening to, /out/ are the adresses you're sending from.
+*ValueName:* could be everything, but's it nice if it would be a little descriptive.
+
+Next to that we have some reserved namespace that provide the patcher with some basic data about the installations.
+
+{{{nameOfInstallation/out/outputs }}}
+Provides a list of outputs to the patcher. Output are also automaticly added when they are found, but this way so can add the really rare signals. The string should be formatted in the following way:
+
+output1, output2, output 3
+
+{{{nameOfInstallation/out/inputs }}}
+This one is a little more nessecary because listening adresses don't send signals. 
+
+{{{nameOfInstallation/out/port }}}
+Normally all data is send out to the installations on port 7000, this is fine except when your running multiple installations on one pc. So you can change the port if you like.
