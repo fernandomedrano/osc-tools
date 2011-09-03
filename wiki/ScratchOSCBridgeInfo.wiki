@@ -1,0 +1,25 @@
+#summary Tips and resources on using the Scratch OSC Bridge
+
+= Introduction =
+
+With the Scratch OSC bridge you are able to let Scratch communicate with OSC sending and receiving applications. 
+
+The bridge converts OSC messages to Scratch sensor and broadcast messages. More technical information about this you'll find at:
+http://wiki.scratch.mit.edu/wiki/Remote_Sensors_Protocol
+
+= Scratch example projects =
+
+*Scratch TUIO*
+Move the Scratch cat with a TUIO client. 
+
+Good clients:
+[http://market.android.com/details?id=tuioDroid.impl tuioDroid (tracker for Android)]
+[http://itunes.apple.com/us/app/tuiopad/id412446962 tuioPad (tracker for iOS devices]
+[http://github.com/fajran/tongseng tongseng (use trackpad as tuio tracker)]
+
+More TUIO tracker implementations at [http://www.tuio.org/?software tuio.org]
+
+
+
+
+
