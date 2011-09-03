@@ -9,15 +9,35 @@ http://wiki.scratch.mit.edu/wiki/Remote_Sensors_Protocol
 
 = Scratch example projects =
 
+All the Scratch projects are commented, so open and discover.
+
 *Scratch TUIO*
+
 Move the Scratch cat with a TUIO client. 
 
 Good clients:
-* [http://market.android.com/details?id=tuioDroid.impl tuioDroid (tracker for Android)]
-* [http://itunes.apple.com/us/app/tuiopad/id412446962 tuioPad (tracker for iOS devices]
-* [http://github.com/fajran/tongseng tongseng (use trackpad as tuio tracker)]
+ * [http://market.android.com/details?id=tuioDroid.impl tuioDroid (tracker for Android)]
+ * [http://itunes.apple.com/us/app/tuiopad/id412446962 tuioPad (tracker for iOS devices]
+ * [http://github.com/fajran/tongseng tongseng (use trackpad as tuio tracker)]
 
 More TUIO tracker implementations at [http://www.tuio.org/?software tuio.org]
 
+*Scratch TouchOSC*
+
+Move the Scratch cat with TouchOSC. 
+
+Use the acceleration sensor data to move the cat. 
+Change the color with fader5 and change the background with different layouts. 
+
+ * [http://hexler.net/software/touchosc touchOSC]
+ * [http://hexler.net/software/touchosc-android touchOSC for Android]
+
+*Scratch Bridge configuration*
+
+Configure the bridge with broadcast messages from Scratch. 
+
+= Scratch new project =
+
+Don't forget to enable "remote sensor connections".
 
 
